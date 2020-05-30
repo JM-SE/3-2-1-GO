@@ -253,9 +253,17 @@ main {
     body::before {
         opacity: 0.4;
     }
+
+    #gameStart {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1439px) {
+    #gameStart h1 {
+        font-size: 60px;
+    }
+
     #scores {
         width: 300px;
     }
