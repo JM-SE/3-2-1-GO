@@ -7,4 +7,4 @@
 -   Styling to imitate racing track elements.
 -   Done in vanilla Javascript.
 
-`#### Only for laptop/desktop screen sizes`
+`Only for laptop/desktop screen sizes`
