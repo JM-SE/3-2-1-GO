@@ -5,30 +5,46 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>3, 2, 1, GO!</title>
         <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <header>
-            <h1>Title</h1>
-        </header>
+        <section class="desktop-only">
+            <h1>Please try this game in your laptop or desktop PC.</h1>
+        </section>
 
-        <main>
-            <div>
-                <h3>How to play:</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Laudantium dolorum error modi. Rerum, mollitia! Quam animi
-                    repellendus quae sunt iste dicta et adipisci laborum.
-                    Voluptatibus quam debitis recusandae soluta sequi?Facilis
-                    saepe id dolorum laborum error, vel, debitis illo
-                    perferendis assumenda dignissimos corporis est distinctio
-                    nisi! Possimus, veritatis saepe iste quae blanditiis sunt ea
-                    laborum qui doloribus repellat labore amet.
-                </p>
-            </div>
+        <div id="gameStart">
+            <h1>3 2 1 - GO!</h1>
+            <p>
+                A game to test your reaction abilities like a race driver!
+            </p>
+            <span>How to play:</span>
+            <ul>
+                <li>Press the start button to start the game.</li>
+                <li>The lights will turn red in one second intervals.</li>
+                <li>
+                    When all lights are turned red, they will turn green in the
+                    next second.
+                </li>
+                <li>
+                    After the lights turn green press the GO button to stop the
+                    timer.
+                </li>
+                <li>
+                    If you press the button before the lights turn green the
+                    time will be invalidated.
+                </li>
+                <li>Restart the game by pressing the chequered flag button.</li>
+            </ul>
+            <button id="playBtn">PLAY</button>
+        </div>
 
+        <main id="main">
             <div class="buttons">
                 <button id="startBtn">START</button>
-                <button id="restartBtn">RESTART</button>
+                <button id="restartBtn"></button>
             </div>
 
             <div class="lights">
@@ -38,10 +54,14 @@
                 <div class="light" id="light04"></div>
             </div>
 
+            <div id="goBtn" class="go-btn">
+                <span id="goBtnText">GET READY</span>
+            </div>
+
             <div id="chronoTime"></div>
 
-            <div id="goBtn" class="go-btn">
-                <span>GO!!</span>
+            <div id="scores">
+                <span class="scores-title">Time history:</span>
             </div>
         </main>
 
