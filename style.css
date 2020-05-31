@@ -242,7 +242,7 @@ main {
     margin: 5px 0 0 10px;
 }
 
-@media only screen and (max-width: 1279px) {
+@media only screen and (max-width: 1273px) {
     main {
         display: none;
     }
@@ -259,7 +259,45 @@ main {
     }
 }
 
-@media only screen and (max-width: 1439px) {
+@media only screen and (min-width: 1273px) {
+    .buttons {
+        margin: 0 0 0 0;
+        top: 0;
+    }
+
+    #startBtn {
+        top: 25px;
+    }
+
+    #restartBtn {
+        top: 30px;
+    }
+
+    .lights {
+        top: 100px;
+    }
+
+    .go-btn {
+        top: 250px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .go-btn span {
+        font-size: 35px;
+    }
+
+    #scores {
+        top: 350px;
+    }
+
+    #chronoTime {
+        top: 525px;
+        margin: 0 0 0 0;
+    }
+}
+
+@media only screen and (min-width: 1439px) {
     #gameStart h1 {
         font-size: 60px;
     }
@@ -269,10 +307,15 @@ main {
     }
 
     #chronoTime {
-        top: 600px;
+        top: 650px;
+    }
+
+    .lights {
+        top: 150px;
     }
 
     .go-btn {
+        top: 325px;
         height: 200px;
         width: 200px;
     }
@@ -280,6 +323,30 @@ main {
     .go-btn span {
         font-size: 40px;
         font-weight: 800;
-        color: rgb(39, 202, 24);
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #scores {
+        width: 400px;
+    }
+
+    #chronoTime {
+        top: 750px;
+    }
+
+    .lights {
+        top: 150px;
+    }
+
+    .go-btn {
+        top: 350px;
+        height: 260px;
+        width: 260px;
+    }
+
+    .go-btn span {
+        font-size: 40px;
+        font-weight: 800;
     }
 }
